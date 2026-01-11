@@ -1,0 +1,37 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install Dependencies
+      run: npm run install:all
+      
+    - name: Run Backend Tests
+      run: cd backend && npm test
+      
+    - name: Build Android
+      run: cd frontend && npm run android
+      
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Deploy to Production
+      run: echo "🚀 Deploying to production..."
