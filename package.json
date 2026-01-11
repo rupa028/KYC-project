@@ -1,0 +1,17 @@
+{
+  "name": "kyc-mobile-app-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:start\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:start": "cd frontend && npm start",
+    "android": "cd frontend && npm run android",
+    "build:android": "cd frontend && npm run android -- --variant=release"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
