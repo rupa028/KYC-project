@@ -1,0 +1,55 @@
+
+### 2. **.gitignore**
+```gitignore
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React Native
+/frontend/node_modules/
+/frontend/build/
+/frontend/ios/build/
+/frontend/android/app/build/
+/frontend/android/.gradle/
+/frontend/android/app/release/
+/frontend/.expo/
+
+# Backend
+/backend/node_modules/
+/backend/coverage/
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# AWS
+.aws/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MongoDB
+data/db/
