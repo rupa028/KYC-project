@@ -1,0 +1,20 @@
+# 🆔 KYC Mobile App - Rural India Edition
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React Native](https://img.shields.io/badge/React_Native-0.72-blue.svg)](https://reactnative.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-18-green.svg)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-7.0-blue.svg)](https://mongodb.com/)
+
+**Lightweight KYC Mobile App** for rural & semi-urban India with **offline support**, **multi-method verification**, and **production-ready security**.
+
+## ✨ Features
+
+- **📱 Multi-Method KYC**: DigiLocker • Document Upload • Face Auth
+- **⚡ Offline-First**: Auto-sync with exponential backoff
+- **🔒 Bank-Level Security**: JWT • AES-256 • Audit Logs
+- **📲 Low-Spec Optimized**: Works on ₹5K Android phones
+- **🌐 Multi-Language**: Hindi, English + 10 regional languages
+- **☁️ Cloud Ready**: AWS S3 • MongoDB Atlas
+
+## 🛠️ Tech Stack
+
